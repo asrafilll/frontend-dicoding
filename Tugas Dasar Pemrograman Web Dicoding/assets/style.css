@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header */
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.brand {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #141414;
+    margin: 0px 30px 0px 30px;
+    font-size: 14px;
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(108, 0, 108) !important;
+}
+
+.brand a:hover {
+    font-weight: bold;
+    color: rgb(108, 0, 108);
+}
+
+header {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+/* Header End */
+
+/* Hero Section */
+
+.hero-right img {
+    width: 400px;
+}
