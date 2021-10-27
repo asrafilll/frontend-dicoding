@@ -70,10 +70,6 @@ header a:hover {
     justify-content: space-between;
 }
 
-.hero-left {
-    width: 550px;
-}
-
 .hero h1 {
     font-size: 48px;
     font-weight: lighter;
@@ -258,5 +254,110 @@ footer {
     .menu-toggle {
         display: flex;
         margin-right: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+    }
+
+    .hero img {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .hero h1,
+    .portfolio h2 {
+        font-size: 32px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .portfolio,
+    .cta,
+    footer {
+        margin-top: 30px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+    }
+
+    .ml-5 {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .ml-0 {
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width:1080px) and (min-width: 520px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .hero img {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .hero h1,
+    .portfolio h2 {
+        font-size: 42px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .portfolio,
+    .cta,
+    footer {
+        margin-top: 30px;
+    }
+
+
+
+    .portfolio-card img {
+        width: 80%;
+    }
+
+    .ml-5 {
+        margin-left: 0px;
+
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .ml-0 {
+        margin-left: 0px !important;
     }
 }
