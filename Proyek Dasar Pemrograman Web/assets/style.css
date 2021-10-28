@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.onOffMenu {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+header img {
+    width: 100px;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: #141414;
+    margin: 0px 30px 0px 30px;
+    font-size: 14px;
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(108, 0, 108) !important;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: rgb(108, 0, 108);
+}
+
+.hero,
+.portfolio,
+.my-bio {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.hero-highlight {
+    background: black;
+    background-clip: text;
+    color: white;
+}
+
+.hero-left p {
+    font-size: 18px;
+    line-height: 140%;
+    color: rgb(109, 109, 109);
+    font-weight: lighter;
+}
+
+.primary-button {
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px #141414;
+    display: inline-block;
+}
+
+.primary-button:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    transition: ease-in-out;
+    transition: 0.2s;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: black;
+}
+
+
+.hero-right img {
+    width: 360px;
+}
+
+.portfolio,
+.cta,
+footer {
+    margin-top: 80px;
+}
+
+.portfolio h2,
+.my-bio h2 {
+    font-size: 42px;
+    font-weight: lighter;
+}
+
+.portfolio-card h3 {
+    margin-bottom: 0px;
+}
+
+.portfolio-card p {
+    width: 400px;
+    line-height: 140%;
+    font-weight: lighter;
+}
+
+.portfolio-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.portfolio-card img {
+    width: 470px;
+    border-radius: 10px;
+    border: 4px solid #141414;
+    display: inline-block;
+}
+
+article {
+    display: flex;
+}
+
+aside h4 {
+    margin-bottom: 10px;
+}
+
+aside button {
+    padding: 5px 10px 5px 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.my-bio img {
+    width: 500px;
+    border-radius: 50px;
+    margin-right: 50px;
+}
+
+.my-bio h2 {
+    margin: 0px;
+}
+
+.my-bio p,
+td {
+    line-height: 140%;
+    font-weight: lighter;
+}
+
+.cta {
+    padding: 30px 30px 30px 30px;
+    border: 5px solid black;
+    color: black;
+    background-color: rgb(245, 255,
+            224);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.cta h5 {
+    margin-top: 20px;
+}
+
+/* CTA End */
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer End */
+
+
+
+
+/* Responsive Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    left: -13px;
+    top: -10px;
+    height: 28px;
+    opacity: 0.0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #141414;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:520px) {
+    nav ul {
+        position: absolute;
+        margin-top: 60px;
+        left: 0;
+        top: 0;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        height: 300px;
+        width: 100%;
+        background-color: white;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        display: flex;
+        transform: translateX(50);
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .hero,
+    .my-bio {
+        flex-direction: column;
+
+    }
+
+    .hero img {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .hero h1,
+    .portfolio h2,
+    .my-bio h2 {
+        font-size: 32px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .portfolio,
+    .cta,
+    footer {
+        margin-top: 30px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+    }
+
+    .my-bio img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .ml-5 {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .ml-0 {
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width:1080px) and (min-width: 520px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .hero,
+    .my-bio {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .hero img {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .hero h1,
+    .portfolio h2 {
+        font-size: 42px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .portfolio,
+    .cta,
+    footer {
+        margin-top: 30px;
+    }
+
+
+
+    .portfolio-card img {
+        width: 80%;
+    }
+
+    .ml-5 {
+        margin-left: 0px;
+
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .ml-0 {
+        margin-left: 0px !important;
+    }
+}
